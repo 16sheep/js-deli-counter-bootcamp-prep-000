@@ -1,11 +1,11 @@
-//Accepts existing line of people(array) and name of the new person(string) as parameters and returns a welcoming string with the new persons place in the line.//
+//Accepts existing line of people(array) and name of the new person(string) as parameters and returns a welcoming string with the new persons place in the line.
 const takeANumber = (katzDeliLine, newPerson) => {
   katzDeliLine.push(newPerson);
   return `Welcome, ${newPerson}. You are number ${katzDeliLine.length} in line.`;
 };
 
 
-//Looks for the first person in the line, if they exist, saves their name in a var and deletes them from the line then returns their name in a string. If the line is empty returns a string to notify that. //
+//Looks for the first person in the line, if they exist, saves their name in a var and deletes them from the line then returns their name in a string. If the line is empty returns a string to notify that. 
 const nowServing = (katzDeliLine) => {
  
   if (katzDeliLine.length > 0) {
@@ -17,7 +17,7 @@ const nowServing = (katzDeliLine) => {
 };
 
 
-//Returns the current line as a string depending on line length//
+//Returns the current line as a string depending on line length
 const currentLine = (katzDeliLine) => {
   if (katzDeliLine.length > 0){
     let line = '';
