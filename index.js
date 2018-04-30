@@ -1,4 +1,5 @@
 //Accepts existing line of people(array) and name of the new person(string) as parameters and returns a welcoming string with the new persons place in the line.
+
 const takeANumber = (katzDeliLine, newPerson) => {
   katzDeliLine.push(newPerson);
   return `Welcome, ${newPerson}. You are number ${katzDeliLine.length} in line.`;
