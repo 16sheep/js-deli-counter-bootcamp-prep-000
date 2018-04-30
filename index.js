@@ -2,10 +2,10 @@
 
 let counter = 0;
 
-const takeANumber = (katzDeliLine, newPerson) => {
-  katzDeliLine.push(newPerson)
-  
+const takeANumber = (katzDeliLine) => {
   counter++; 
+  
+  katzDeliLine.push(counter)
   
   return `Welcome. You are number ${counter} in line.`;
 };
@@ -15,6 +15,7 @@ const takeANumber = (katzDeliLine, newPerson) => {
 const nowServing = (katzDeliLine) => {
  
   if (katzDeliLine.length > 0) {
+    
     let currentlyServed = katzDeliLine[0];
     katzDeliLine.shift();
     return `Currently serving ${currentlyServed}.`;
